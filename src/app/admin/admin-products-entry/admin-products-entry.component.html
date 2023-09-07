@@ -1,0 +1,25 @@
+<h3>admin-products-entry works!</h3>
+
+<form [formGroup]="productEntryForm">
+    <div>
+        <label>Product Name</label>
+        <input required type="text" formControlName="name">
+    </div>
+    
+    <div>
+        <label>Product Description</label>
+        <input required type="text" formControlName="description">
+    </div>
+    
+    <div>
+        <label>quantity</label>
+        <input required type="text" formControlName="quantity">
+    </div>
+    
+    <div>
+        <label>price</label>
+        <input required type="text" formControlName="price">
+    </div>
+
+    <button type="button" (click)="onSubmit()">Submit</button>
+</form>

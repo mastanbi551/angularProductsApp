@@ -1,0 +1,27 @@
+<div class="row Absolute-Center is-Responsive">
+   
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div id="logo-container"></div>
+            <h3>Admin Login</h3>
+            <div>
+                <label class="text-left">Email</label>
+                <input required type="text" formControlName="email">
+        
+                <label class="text-left" for="password" >password</label>
+                <input type="password" formControlName="password">
+        
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+                
+            </div>
+            <div>
+                <span>Don't have an account? 
+                <a routerLink="/signUp">signUp</a></span>
+            </div>
+        </form>
+   
+</div>
+       
+  
+
